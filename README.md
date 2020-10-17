@@ -1,2 +1,2 @@
-# easyorm
+# easyorm demo
 demo
