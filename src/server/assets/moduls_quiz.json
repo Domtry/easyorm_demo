@@ -1,0 +1,16 @@
+{
+    "name": "module name : ",
+    "option" : {
+        "encoding" : "Encodage utiliser : ",
+        "dataSource" : "Type de base de donnees utilisé : ",
+        "dbname": "nom de la base de données : "
+    },
+    "properties": {
+        "type": "Type de la propriete : ",
+        "length": "Taille : ",
+        "default" : "Valeur par defaut : ",
+        "index" : "Utiliser comme valeur unique ? True or False ",
+        "required" : "La valeur doit etre obligatoire ? True or False ",
+        "commet": "Description de cette valeur : "
+    }
+  }

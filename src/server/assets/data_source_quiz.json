@@ -1,0 +1,7 @@
+{
+    "host": "Entrer votre hostname : ",
+    "user": "Entrer votre nom d'utilisateur : ",
+    "password" : "Entrer votre mot de passe : ",
+    "dbname" : "Entrer le nom de la base de données : ",
+    "datasource" : "Type de base de données utilisé : "
+}
