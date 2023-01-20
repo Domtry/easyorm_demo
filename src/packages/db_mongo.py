@@ -10,11 +10,9 @@ class DB_Mongo:
     def create_collection(self, collection):
         self.__db[collection]
        
-    def  execute(self, collection, values, method):
+    def execute(self, collection, values, method):
         db_collect = self.__db[collection]
         if method == 'GET':
-            data = db_collect.find()
-            return data
-        
+            return db_collect.find()
         if method == 'POST':
             db_collect.insert_one(values)

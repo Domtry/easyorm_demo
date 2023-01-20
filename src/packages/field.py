@@ -32,5 +32,5 @@ class CharField(Field):
     def __init__(self, **args):
         super().__init__(**args)
         
-    def clean(cls):
-        return cls.get()
+    def clean(self):
+        return self.get()

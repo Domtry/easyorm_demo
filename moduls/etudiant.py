@@ -22,7 +22,5 @@ class EtudiantModel(Etudiant):
 	def get(self):
 		#Get all student from my database
 		return self.find()
-
-		pass
 	def delete(self):
 		pass

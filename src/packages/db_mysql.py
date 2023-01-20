@@ -16,20 +16,16 @@ class DB_MySql :
                 print(f'Erreur serveur de base de données \n{error}')
             else:
                 self.__db = msql.connect(**args)
-        else:
-            pass
         
-    def  execute(self, query, method):
+    def execute(self, query, method):
         cursor = self.__db.cursor()
         cursor.execute(query)
-        
+
         if method == 'GET':
-            data = []
-            for els in cursor:
-                data.append(els)
+            data = list(cursor)
             cursor.close()
             return data
-        
+
         if method == 'POST':
             self.__db.commit()
             cursor.close()
