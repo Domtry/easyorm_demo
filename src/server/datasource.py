@@ -18,7 +18,7 @@ class DataSource:
             values = cls.simple_quiz(quiz)
             json_data[item] = values
 
-        with open(f'server/data_source.json', 'w') as src:
+        with open('server/data_source.json', 'w') as src:
             data_ftd = {
                 "host": json_data['host'],
                 "user": json_data['user'],
@@ -30,5 +30,4 @@ class DataSource:
     
     @classmethod
     def simple_quiz(cls, data):
-        resp = input(data)
-        return resp
+        return input(data)
